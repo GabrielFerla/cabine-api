@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.2, pytest-9.0.3, pluggy-1.6.0 -- C:\cabine-api\cabine-api\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\cabine-api\cabine-api
+configfile: pytest.ini
+plugins: anyio-4.13.0
+collecting ... collected 8 items / 7 deselected / 1 selected
+
+tests/test_semantic.py::test_mensagem_de_alerta_descreve_o_problema SKIPPED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\cabine-api\cabine-api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 1 skipped, 7 deselected, 1 warning in 0.89s =================

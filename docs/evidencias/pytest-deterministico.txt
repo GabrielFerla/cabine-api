@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.2, pytest-9.0.3, pluggy-1.6.0 -- C:\cabine-api\cabine-api\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\cabine-api\cabine-api
+configfile: pytest.ini
+plugins: anyio-4.13.0
+collecting ... collected 8 items / 1 deselected / 7 selected
+
+tests/test_auth.py::test_login_valido PASSED                             [ 14%]
+tests/test_auth.py::test_login_invalido PASSED                           [ 28%]
+tests/test_cabins.py::test_listar_com_token PASSED                       [ 42%]
+tests/test_cabins.py::test_listar_sem_token PASSED                       [ 57%]
+tests/test_cabins.py::test_criar_sem_ser_admin PASSED                    [ 71%]
+tests/test_readings.py::test_leitura_abaixo_do_threshold_gera_alerta PASSED [ 85%]
+tests/test_readings.py::test_sensor_inexistente PASSED                   [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\cabine-api\cabine-api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 7 passed, 1 deselected, 1 warning in 5.07s ==================
