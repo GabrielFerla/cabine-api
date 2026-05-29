@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: cabine-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cabine
+      MYSQL_USER: cabine
+      MYSQL_PASSWORD: cabine123
+    ports:
+      - "3306:3306"
+    volumes:
+      - cabine-data:/var/lib/mysql
+
+  # mosquitto: descomentar quando entrar a ingestao MQTT (depois)
+  # mosquitto:
+  #   image: eclipse-mosquitto:2
+  #   ports: ["1883:1883"]
+  #   volumes: ["./mosquitto/config:/mosquitto/config"]
+
+volumes:
+  cabine-data:

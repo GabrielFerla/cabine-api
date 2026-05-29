@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+pymysql
+cryptography
+passlib[bcrypt]
+bcrypt==4.0.1
+python-jose[cryptography]
+python-multipart
+pydantic[email]
+pydantic-settings
+slowapi
+pytest
+httpx
+anthropic
